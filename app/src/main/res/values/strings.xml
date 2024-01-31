@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MecanicaAppPro</string>
+    <string name="textview">LOGIN MECANICAPP</string>
+    <string name="edt_correo">Correo</string>
+    <string name="edt_password">Contraseña</string>
+    <string name="btn_login_ingresa">INGRESAR</string>
+    <string name="btn_foto">FOTO</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+    <string name="text_view_placa">PLACA</string>
+    <string name="text_view_NombreDelConductor">NOMBRE DEL CONDUCTOR</string>
+    <string name="text_Descripcion">DESCRIPCIÓN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_agregar_vehiculo2">AGREGAR VEHICULO</string>
+    <string name="btn_agregar_fragment">AGREGAR VEH - FRAGMENT</string>
+    <string name="btn_go_history">IR A HISTORIAL</string>
+    <string name="etiqueta_placa">PLACA</string>
+    <string name="etiqueta_conductor">NOMBRE DE CONDUCTOR</string>
+    <string name="etiqueta_descripcion">DESCRIPCION</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "691810494009",
+    "project_id": "mecanicappkts",
+    "storage_bucket": "mecanicappkts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691810494009:android:60298e3c4e1d71d3034fe8",
+        "android_client_info": {
+          "package_name": "com.devjean.mecanicapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXwxgz-LxLSobb7cQQY0U_4OloyhhfmRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
