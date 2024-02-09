@@ -15,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="60dp"
             android:layout_marginEnd="20dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,82 +31,123 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:elevation="14dp"
+                    app:cardCornerRadius="6dp">
 
-                    <ImageView
-                        android:id="@+id/photo_veh"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="230dp"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#66000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#66000000" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <FrameLayout
+                                        android:id="@+id/frameLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imagePhoto"
+                                            android:layout_width="290dp"
+                                            android:layout_height="310dp"
+                                            android:contentDescription="@string/todo"
+                                            android:scaleType="fitXY"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <ImageView
+                                            android:id="@+id/centeredImage"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:contentDescription="@string/todo"
+                                            android:src="@drawable/baseline_image_search_24" />
+
+                                        <TextView
+                                            android:id="@+id/subtitleImage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="60dp"
+                                            android:text="@string/text_inside_image"
+                                            android:textAlignment="center"
+                                            android:textSize="14sp" />
+
+                                    </FrameLayout>
+
+                                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#66000000" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#66000000" />
+
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="14dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/btn_foto_registro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableLeft="@android:drawable/ic_menu_camera"
-                        android:text="@string/btn_foto" />
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <Button
-                        android:id="@+id/btn_eliminar_foto_registro"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableLeft="@android:drawable/ic_menu_delete"
-                        android:text="@string/btn_eliminar" />
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="27dp" />
 
                 <EditText
-                    android:id="@+id/txt_placa"
-                    android:layout_width="330dp"
+                    android:id="@+id/textLicensePlate"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:hint="@string/text_view_placa"
                     android:inputType="text" />
 
                 <EditText
-                    android:id="@+id/txt_nombre_conductor"
-                    android:layout_width="331dp"
-                    android:layout_height="85dp"
-                    android:ems="10"
+                    android:id="@+id/textDriverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/text_view_NombreDelConductor"
                     android:inputType="text" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="39dp" />
-
                 <EditText
-                    android:id="@+id/txt_descripcion_registro"
+                    android:id="@+id/textDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:ems="10"
+                    android:layout_height="wrap_content"
                     android:gravity="start|top"
                     android:hint="@string/text_Descripcion"
-                    android:inputType="textMultiLine" />
+                    android:inputType="text" />
 
                 <Button
-                    android:id="@+id/btn_agregar_registro"
+                    android:id="@+id/btnAddVehicle"
                     android:layout_width="match_parent"
                     android:layout_height="66dp"
                     android:hint="@string/btn_agregar_vehiculo2"
@@ -115,6 +155,7 @@
                     android:textSize="20sp" />
 
             </LinearLayout>
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

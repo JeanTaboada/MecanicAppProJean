@@ -23,3 +23,5 @@ w
 Gapp/src/main/java/com/devjean/mecanicapp/ui/fragments/ReportFragment.kt,f\1\f131e171e57a2e71b95eee4ceff8ec84d55f4122
 x
 Happ/src/main/java/com/devjean/mecanicapp/ui/fragments/ProfileFragment.kt,6\3\63b76cece72fbe3b251f0d5e9a4610c2e6217682
+C
+settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850
