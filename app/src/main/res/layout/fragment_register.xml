@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.RegisterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment Register" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/img_btn"
+                android:layout_width="match_parent"
+                android:layout_height="625dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/photo_veh"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:src="@drawable/ic_launcher_background" />
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_foto_registro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@android:drawable/ic_menu_camera"
+                        android:text="@string/btn_foto" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_eliminar_foto_registro"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@android:drawable/ic_menu_delete"
+                        android:text="@string/btn_eliminar" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp" />
+
+                <EditText
+                    android:id="@+id/txt_placa"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/text_view_placa"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/txt_nombre_conductor"
+                    android:layout_width="331dp"
+                    android:layout_height="85dp"
+                    android:ems="10"
+                    android:hint="@string/text_view_NombreDelConductor"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp" />
+
+                <EditText
+                    android:id="@+id/txt_descripcion_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/text_Descripcion"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/btn_agregar_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:hint="@string/btn_agregar_vehiculo2"
+                    android:textColorHint="#F1F0F0"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
