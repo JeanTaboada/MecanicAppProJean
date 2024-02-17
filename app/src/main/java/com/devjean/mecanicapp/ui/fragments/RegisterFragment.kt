@@ -41,6 +41,7 @@ class RegisterFragment : Fragment() {
 
         val textLicensePlate = view.findViewById<EditText>(R.id.textLicensePlate)
         val textDriverName = view.findViewById<EditText>(R.id.textDriverName)
+        val textCellPhone = view.findViewById<EditText>(R.id.textCellPhone)
         val textDescription = view.findViewById<EditText>(R.id.textDescription)
         val btnAddVehicle = view.findViewById<Button>(R.id.btnAddVehicle)
         imagePhoto = view.findViewById(R.id.imagePhoto)
@@ -54,6 +55,7 @@ class RegisterFragment : Fragment() {
 //            currentUser?.let { user ->
 //                val licensePlate = textLicensePlate.text.toString()
 //                val driverName = textDriverName.text.toString()
+//                  val cellPhone = textCellPhone.text.toString()
 //                val description = textDescription.text.toString()
 //
 //                // Generar un registerID único usando randomUUID
@@ -67,6 +69,7 @@ class RegisterFragment : Fragment() {
 //                    "registerID" to registerID,
 //                    "licensePlate" to licensePlate,
 //                    "driverName" to driverName,
+//                   "cellPhone" to cellPhone,
 //                    "description" to description,
 //                    "userUID" to uid
 //                )
@@ -104,9 +107,10 @@ class RegisterFragment : Fragment() {
         btnAddVehicle.setOnClickListener {
             val licensePlate = textLicensePlate.text.toString().trim()
             val driverName = textDriverName.text.toString().trim()
+            val cellPhone = textCellPhone.text.toString().trim()
             val description = textDescription.text.toString().trim()
 
-            if (licensePlate.isEmpty() || driverName.isEmpty() || description.isEmpty()) {
+            if (licensePlate.isEmpty() || driverName.isEmpty() || cellPhone.isEmpty() || description.isEmpty()) {
                 Toast.makeText(context, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
@@ -127,6 +131,7 @@ class RegisterFragment : Fragment() {
                     "registerID" to registerID,
                     "licensePlate" to licensePlate,
                     "driverName" to driverName,
+                    "cellPhone" to cellPhone,
                     "description" to description,
                     "userUID" to uid
                 )
@@ -153,6 +158,7 @@ class RegisterFragment : Fragment() {
                                     // Limpiar los campos de texto después de un registro exitoso
                                     textLicensePlate.setText("")
                                     textDriverName.setText("")
+                                    textCellPhone.setText("")
                                     textDescription.setText("")
                                     // Restaurar el estado inicial de la imagen
                                     //NO LIMPIA LA IMAGEN DPS DE LA RESPUESTA EXITOSA
@@ -180,6 +186,7 @@ class RegisterFragment : Fragment() {
                             // Limpiar los campos de texto después de un registro exitoso
                             textLicensePlate.setText("")
                             textDriverName.setText("")
+                            textCellPhone.setText("")
                             textDescription.setText("")
 
                             Toast.makeText(context, "Vehículo registrado", Toast.LENGTH_SHORT).show()

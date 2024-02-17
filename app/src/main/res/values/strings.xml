@@ -8,6 +8,7 @@
     <string name="btn_eliminar">ELIMINAR</string>
     <string name="text_view_placa">PLACA</string>
     <string name="text_view_NombreDelConductor">NOMBRE DEL CONDUCTOR</string>
+    <string name="text_view_cellphone">CELULAR</string>
     <string name="text_Descripcion">DESCRIPCIÓN</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_agregar_vehiculo2">AGREGAR VEHICULO</string>

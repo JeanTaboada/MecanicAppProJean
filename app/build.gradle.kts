@@ -45,6 +45,9 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage-ktx:20.3.0")
+    implementation("com.google.firebase:firebase-database-ktx:20.0.4")
+    implementation("com.google.firebase:firebase-auth-ktx:20.0.4")
+
 
     //  Image Picker
     implementation("com.github.dhaval2404:imagepicker:2.1")
